@@ -1,0 +1,960 @@
+body{
+    background-color:#E5E4E2;
+    }
+
+/* Navigation Bar */
+
+.navbar{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28282B;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar-brand{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Courgette";
+    font-weight: 400;
+    font-style: italic;
+    display: inline;
+    list-style: none;
+    text-decoration: none;     
+    padding: 0;
+    margin: 0;
+} 
+
+.nav-link {
+    color: #FAF9F6;
+    text-decoration: none;
+    padding: 5px 30px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #6082B6;
+    border-bottom: solid 2px #6082B6;
+    border-radius: 30px;
+}
+
+.website_name {
+    padding: 0 20px;
+    display:flex;
+    font-size: 25px;
+    font-family: "Courgette";
+    font-weight: 600;
+    font-style:italic;
+    color:#FAF9F6;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Greece Page: Header */
+
+.headergr{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    background: url('Greece Main Picture.jpg');
+    height: 60vh;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.main_titlegr{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 140px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    color:#FAF9F6;
+    padding-top: 180px;
+    padding-left: 60px;
+}
+
+/* Greece Page: Main Body */
+
+.main_bodygr{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    margin: 50px 150px;
+    background-color: white;
+}
+
+.h2gr{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color:#28282B;
+}
+
+.p1gr{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 50;
+    font-style: normal;
+    text-align: left;
+    color:#28282B;
+    padding-top: 20px;
+}
+   
+/* Greece Page: Pictures*/
+    
+.rowgr {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+    
+.columngr {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    padding: 30px 0;
+}
+
+.column2gr {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    padding: 30px 0;
+}
+
+.column3gr {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 25%;
+    padding: 20px 10px;
+}
+
+.column4gr {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 30%;
+    padding: 20px 10px;
+    border: solid #28282B 1px;
+    border-radius: 20px;
+    margin: 10px 10px;
+    overflow: hidden;
+
+}
+
+.column4gr:hover {
+    z-index: 1;
+    border: 2px solid #6082B6;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+/* Info under pictures */
+
+.infogr {
+    display:flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    padding-top: 18px;
+    text-align: left;
+    font-size: 18px;
+    font-family: "Courgette";
+    font-weight: 400;
+    font-style: italic;
+    color:#28282B;
+}
+
+/* Info under links */
+
+.info3gr {
+    display:flex;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Courgette";
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    color:#28282B;
+}
+
+.linkgr {
+    text-decoration: none;
+}
+
+/* Greece Page: Accordion */
+
+.accordiongr {
+    background-color: #FAF9F6;
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    font-size: 40px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color:#28282B;
+    border: solid #28282B 2px;
+    outline: none;
+    transition: 0.4s;
+    position: sticky;
+    top: 68px;
+    margin: 20px 0;
+    z-index: 1000;
+}
+    
+.active, .accordiongr:hover {
+    background-color: #e9f5f8;
+}
+    
+.panelgr {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 18px;
+    background-color: white;
+}
+
+.imggr {
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Newsletter Section */
+
+.newsletter {
+    background: #E5E4E2;
+    margin: 0 auto;
+    margin: 50px 0;
+    text-align: center;
+    padding: 40px 30px 20px 30px;
+  }
+  .newsletter h1 {
+    color: #28282B;
+    font-size: 30px;
+    font-family: "Anton SC", sans-serif;
+  }
+  .newsletter hr {
+    width: 70px;
+    height: 3px;
+    margin: 30px auto;
+    border: 0;
+    background: #28282B;
+  }
+  .newsletter p {
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 60;
+    font-style: normal;
+    text-align: center;
+    color:#28282B;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .newsletter input {
+    border-radius: 8px;
+    background-color: #28282B;
+    width: 50%;
+    height: 55px;
+    border: 2px white solid;
+    padding: 0 20px;
+    color: #FAF9F6;
+    margin-bottom: 35px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  ::placeholder {
+    color: #FAF9F6;
+  }
+  .newsletter button {
+    border: 1px solid #28282B;
+    border-radius: 8px;
+    height: 50px;
+    background-color: #FAF9F6;
+    color:#28282B;
+    padding: 0px 28px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+  }
+  .newsletter button:hover {
+    z-index: 1;
+    border: 2px solid #6082B6;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+ 
+
+/* Tablets: 768 px */
+
+@media only screen and (max-width: 768px) { 
+    body{
+        background-color:#E5E4E2;
+        }
+    
+    /* Navigation Bar */
+    
+    .navbar{
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #28282B;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 10px 5px;
+    }
+    
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .navbar-brand{
+        display:flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        font-size: 20px;
+        font-family: "Courgette";
+        font-weight: 400;
+        font-style: italic;
+        display: inline;
+        list-style: none;
+        text-decoration: none;     
+        padding: 0;
+        margin: 0;
+    } 
+    
+    .nav-link {
+        color: #FAF9F6;
+        text-decoration: none;
+        padding: 5px 20px;
+        transition: 0.2s;
+        display: inline-block;
+    }
+    
+    .nav-link:hover {
+        color: #6082B6;
+        border-bottom: solid 2px #6082B6;
+        border-radius: 30px;
+    }
+    
+    .website_name {
+        padding: 0 15px;
+        display:flex;
+        font-size: 20px;
+        font-family: "Courgette";
+        font-weight: 600;
+        font-style:italic;
+        color:#FAF9F6;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    /* Greece Page: Header */
+    
+    .headergr{
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        background: url('https://res.cloudinary.com/dkp8nvrjk/image/upload/v1723800266/Greece_4k_bwdeuk.jpg');
+        height: 60vh;
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .main_titlegr{
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 60px;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: left;
+        color:#FAF9F6;
+        padding-top: 100px;
+        padding-left: 40px;
+    }
+    
+    /* Greece Page: Main Body */
+    
+    .main_bodygr{
+        display:flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: 30px 80px;
+        background-color: white;
+    }
+    
+    /* Greece Page: Accordion */
+    
+    .accordiongr {
+        background-color: #FAF9F6;
+        cursor: pointer;
+        padding: 0px;
+        width: 100%;
+        font-size: 25px;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color:#28282B;
+        border: solid #28282B 2px;
+        outline: none;
+        transition: 0.4s;
+        position: sticky;
+        top: 68px;
+        margin: 10px 0;
+        z-index: 1;
+    }
+        
+    .active, .accordiongr:hover {
+        background-color: #e9f5f8;
+    }
+        
+    .panelgr {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 0 18px;
+        background-color: white;
+    }
+    
+    .p1gr{
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+        font-family: "Merriweather", serif;
+        font-weight: 50;
+        font-style: normal;
+        text-align: left;
+        color:#28282B;
+        padding-top: 10px;
+    }
+       
+    /* Greece Page: Pictures*/
+        
+    .rowgr {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+        
+    .columngr {
+        display:flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        padding: 10px 0;
+    }
+    
+    .column2gr {
+        display:flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        padding: 10px 0;
+    }
+    
+    .column3gr {
+        display:flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        padding: 10px 0px;
+    }
+    
+    .column4gr {
+        display:flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        padding: 10px 10px;
+        border: solid #28282B 1px;
+        border-radius: 20px;
+        margin: 10px 10px;
+        overflow: hidden;
+    
+    }
+    
+    .column4gr:hover {
+        z-index: 1;
+        border: 2px solid #6082B6;
+        transform: scale(1.05);
+        transition: transform 0.2s;
+        overflow: hidden;
+    }
+    
+    .infogr {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        text-align: left;
+        font-size: 14px;
+        font-family: "Courgette";
+        font-weight: 400;
+        font-style: italic;
+        color:#28282B;
+    }
+    
+    .info3gr {
+        display:flex;
+        padding: 10px;
+        font-size: 20px;
+        font-family: "Courgette";
+        font-style: normal;
+        font-weight: 600;
+        text-align: center;
+        color:#28282B;
+    }
+    
+    .linkgr {
+        text-decoration: none;
+    }
+    
+    /* Newsletter Section*/
+    
+    .newsletter {
+        background: #E5E4E2;
+        margin: 0 auto;
+        margin: 20px 0;
+        text-align: center;
+        padding: 20px 30px;
+      }
+      .newsletter h1 {
+        color: #28282B;
+        font-size: 25px;
+        font-family: "Anton SC", sans-serif;
+      }
+      .newsletter hr {
+        width: 70px;
+        height: 3px;
+        margin: 30px auto;
+        border: 0;
+        background: #28282B;
+      }
+      .newsletter p {
+        font-size: 15px;
+        font-family: "Merriweather", serif;
+        font-weight: 60;
+        font-style: normal;
+        text-align: center;
+        color:#28282B;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+      .newsletter input {
+        border-radius: 8px;
+        background-color: #28282B;
+        width: 50%;
+        height: 45px;
+        border: 2px white solid;
+        padding: 0 20px;
+        color: #FAF9F6;
+        margin-bottom: 35px;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+      ::placeholder {
+        color: #FAF9F6;
+      }
+      .newsletter button {
+        border: 1px solid #28282B;
+        border-radius: 8px;
+        height: 40px;
+        background-color: #FAF9F6;
+        color:#28282B;
+        padding: 0px 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        font-size: 15px;
+        font-family: "Merriweather", serif;
+      }
+      .newsletter button:hover {
+        z-index: 1;
+        border: 2px solid #6082B6;
+        transform: scale(1.05);
+        transition: transform 0.2s;
+      }
+
+}
+
+/* Mobile: 420 px */
+
+@media only screen and (max-width: 420px) { 
+    body{
+        background-color:#E5E4E2;
+        }
+    
+    /* Navigation Bar */
+    
+    .navbar{
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #28282B;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 10px 5px;
+    }
+    
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .navbar-brand{
+        display:flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        font-size: 20px;
+        font-family: "Courgette";
+        font-weight: 400;
+        font-style: italic;
+        display: inline;
+        list-style: none;
+        text-decoration: none;     
+        padding: 0;
+        margin: 0;
+    } 
+    
+    .nav-link {
+        color: #FAF9F6;
+        text-decoration: none;
+        padding: 5px 10px;
+        transition: 0.2s;
+        display: inline-block;
+    }
+    
+    .nav-link:hover {
+        color: #6082B6;
+        border-bottom: solid 2px #6082B6;
+        border-radius: 30px;
+    }
+    
+    .website_name {
+        display: none;
+        padding: 0 15px;
+        font-size: 20px;
+        font-family: "Courgette";
+        font-weight: 600;
+        font-style:italic;
+        color:#FAF9F6;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    /* Greece Page: Header */
+    
+    .headergr{
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        background: url('https://res.cloudinary.com/dkp8nvrjk/image/upload/v1723800266/Greece_4k_bwdeuk.jpg');
+        height: 30vh;
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .main_titlegr{
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 40px;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: left;
+        color:#FAF9F6;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    
+    /* Greece Page: Main Body */
+    
+    .main_bodygr{
+        display:flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 0px 30px;
+        background-color: white;
+    }
+    
+    /* Greece Page: Accordion */
+    
+    .accordiongr {
+        background-color: #FAF9F6;
+        cursor: pointer;
+        padding: 0px;
+        width: 100%;
+        font-size: 20px;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color:#28282B;
+        border: solid #28282B 1px;
+        outline: none;
+        transition: 0.4s;
+        position: sticky;
+        top: 68px;
+        margin: 5px 0;
+        z-index: 1;
+    }
+        
+    .active, .accordiongr:hover {
+        background-color: #e9f5f8;
+    }
+        
+    .panelgr {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 0 14px;
+        background-color: white;
+    }
+    
+    .p1gr{
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        font-family: "Merriweather", serif;
+        font-weight: 50;
+        font-style: normal;
+        text-align: left;
+        color:#28282B;
+        padding-top: 5px;
+    }
+       
+    /* Greece Page: Pictures*/
+        
+    .rowgr {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+        
+    .columngr {
+        display:flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        padding: 5px 0;
+    }
+    
+    .column2gr {
+        display:flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        padding: 5px 0;
+    }
+    
+    .column3gr {
+        display:flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        padding: 5px 0px;
+    }
+    
+    .column4gr {
+        display:flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        padding: 10px 10px;
+        border: solid #28282B 1px;
+        border-radius: 10px;
+        margin: 5px 5px;
+        overflow: hidden;
+    
+    }
+    
+    .column4gr:hover {
+        z-index: 1;
+        border: 2px solid #6082B6;
+        transform: scale(1.05);
+        transition: transform 0.2s;
+        overflow: hidden;
+    }
+    
+    .infogr {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        text-align: left;
+        font-size: 12px;
+        font-family: "Courgette";
+        font-weight: 400;
+        font-style: italic;
+        color:#28282B;
+    }
+    
+    .info3gr {
+        display:flex;
+        padding: 5px;
+        font-size: 15px;
+        font-family: "Courgette";
+        font-style: normal;
+        font-weight: 600;
+        text-align: center;
+        color:#28282B;
+    }
+    
+    .linkgr {
+        text-decoration: none;
+    }
+    
+    /* Newsletter Section*/
+    
+    .newsletter {
+        background: #E5E4E2;
+        margin: 0 auto;
+        margin: 20px 0;
+        text-align: center;
+        padding: 20px 30px;
+      }
+      .newsletter h1 {
+        color: #28282B;
+        font-size: 20px;
+        font-family: "Anton SC", sans-serif;
+      }
+      .newsletter hr {
+        width: 50px;
+        height: 3px;
+        margin: 30px auto;
+        border: 0;
+        background: #28282B;
+      }
+      .newsletter p {
+        font-size: 12px;
+        font-family: "Merriweather", serif;
+        font-weight: 60;
+        font-style: normal;
+        text-align: center;
+        color:#28282B;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+      .newsletter input {
+        border-radius: 8px;
+        background-color: #28282B;
+        width: 70%;
+        height: 35px;
+        border: 2px white solid;
+        padding: 0 10px;
+        color: #FAF9F6;
+        margin-bottom: 35px;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+      ::placeholder {
+        color: #FAF9F6;
+      }
+      .newsletter button {
+        border: 1px solid #28282B;
+        border-radius: 8px;
+        height: 30px;
+        background-color: #FAF9F6;
+        color:#28282B;
+        padding: 0px 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        font-size: 12px;
+        font-family: "Merriweather", serif;
+      }
+      .newsletter button:hover {
+        z-index: 1;
+        border: 2px solid #6082B6;
+        transform: scale(1.05);
+        transition: transform 0.2s;
+      }
+
+}
+
+/* Smaller Mobiles: 320px; */
+
+@media only screen and (max-width: 320px) { 
+    .nav-item {
+        display: inline-block;
+        font-size: 18px;
+        font-family: "Courgette";
+        font-weight: 400;
+        font-style: italic;
+        display: inline;
+        list-style: none;
+        text-decoration: none;     
+        padding: 0;
+        margin: 0;
+    } 
+    
+
+}
